@@ -7,9 +7,10 @@ import javax.persistence.Id
 
 
 @Entity
-class Article(
+class Articles(
         @Id @GeneratedValue(strategy = GenerationType.AUTO)
-        var id: Int? = 0,
-        var name: String = " ",
-        var text:String = ""
+        var id_article: Int? = 0,
+        var name_article: String = " ",
+        var tags:String = " ",
+        var article_text:String = ""
 )
